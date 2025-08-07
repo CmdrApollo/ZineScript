@@ -91,30 +91,11 @@ zine:save("output.png")
 
 Now, if you run the script and find the image as specified by the path in zine:save, you should see some teeny-tiny page numbers on the top-left of each page along with our randomly-generated colors!
 
-Since the text is so small, let's make it a bit bigger, and also give it a random color! To do that, we need to add a Lua table called 
-
-```lua
-textOptions
-```
-
-in our larger table of text options. So now, let's replace the previous
-
-```lua
-zine:text()
-```
-
-call with the following code:
+Since the text is so small, let's make it a bit bigger, and also give it a random color! To do that, we need to add a Lua table called `textOptions` in our larger table of all options for the text (including "text", "x", and "y"). So now, let's replace the previous `zine:text()` call with the following code:
 
 ```lua
 zine:text({
     text = "Page " .. tostring(page),
-    -- (x, y) coordinate pairs are measured
-    -- in inches and are offset from the top-
-    -- left. so (0.1, 0.1) means that the
-    -- top-left corner of the text will be
-    -- inset 0.1 inches from the left of the
-    -- page and 0.1 inches from the top of
-    -- the page.
     x = 0.1,
     y = 0.1,
     -- this part is new !!
@@ -124,3 +105,49 @@ zine:text({
     }
 })
 ```
+
+Note: There are more optional parameters to be changed via `textOptions` than just size and color! These include things like changing the font and centering the text. Check out the [docs](documentation/) for more details!
+
+For the penultimate part of this tutorial, I will demonstrate how you can:
+1. Transform surfaces in various ways
+2. Stack zine calls in order to achieve multiple effects at once
+
+So, let's rotate our text and then scale it up with the `zine:rotate` and `zine:scale` function calls. Let's replace our `zine:add()` call with the following code:
+
+```lua
+zine:add(
+    zine:scale({
+        surface = zine:rotate({
+            surface = zine:text({
+                text = "Page " .. tostring(page),
+                x = zine:pageWidth() / 2,
+                y = zine:pageHeight() / 2,
+                textOptions = {
+                    size = 30,
+                    color = zine:randomColor(),
+                    centered = true
+                }
+            }),
+            angle = 90
+        }),
+        scale = 2.0
+    })
+)
+```
+
+Notice the nesting of calls here. This is integral to the control flow of ZineScript and is what allows you, similarly to a guitar pedal board, to change the order of effects. For our simple example with rotation and scaling, this won't effect much, but it is something to consider!
+
+Similarly important to note is the use of `zine:pageWidth()` and `zine:pageHeight()`. These are built in functions that can be used to return the size of a page in inches! So taking these values and dividing each by 2 means that we receive the center of the page in inches. This, when paired with the use of `centered = true`, means that our text will now be centered on the page!
+
+Finally for this tutorial, I will just show off something fun: the `zine:spraypaint()` function! For the final time, replace the call to `zine:background()` with the following code:
+
+```lua
+zine:background(zine:randomColor())
+zine:spraypaint({
+    surface = zine:newSurface({ x = 0, y = 0, width = zine:pageWidth(), height = zine:pageHeight() }),
+    color = "white",
+    region = { 0, 0, zine:pageWidth(), zine:pageHeight() }
+})
+```
+
+Run the script for the last time, and you should a white spraypaint-like effect over the randomly-colored-background. Thank you for sticking through to the end of the ZineScript tutorial, and happy coding!
