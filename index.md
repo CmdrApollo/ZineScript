@@ -30,3 +30,58 @@ zine:author("Author Name Here")
 ```
 
 These lines are **not** necessary, but are useful for specifying metadata that can be used later on.
+
+Next, let's add some content to our zine. We'll do this by looping over each page, and giving it a random background color with the following code:
+
+```lua
+...
+
+for page = 1, 8 do
+    zine:startpage(page)
+    zine:background(zine:randomColor())
+    -- this following line is not strictly
+    -- necessary, but it is my personal
+    -- preference to call it before going
+    -- on to the next page
+    zine:endpage()
+end
+```
+
+Note: We only loop over the range 1-8. This is because, at the moment, ZineScript only supports 8-page folded zines. This is slated to change in the future. However, as it stands, ZineScript is in its infantile stages of development.
+
+Now, let's add some unique text onto each page. For this example, I will use page numbers, but feel free to get creative!
+
+```lua
+...
+
+-- this code slots in after we call
+-- zine:background but before we call
+-- zine:endpage
+zine:add(
+    zine:text({
+        text = "Page " .. tostring(page),
+        -- (x, y) coordinate pairs are measured
+        -- in inches and are offset from the top-
+        -- left. so (0.1, 0.1) means that the
+        -- top-left corner of the text will be
+        -- inset 0.1 inches from the left of the
+        -- page and 0.1 inches from the top of
+        -- the page.
+        x = 0.1,
+        y = 0.1,
+    })
+)
+
+...
+```
+
+At this point, you may be tempted to run our script and see what beautiful artwork we have created. However, if you *do* try to run the script, you won't see anything! The reason for this is because at the very bottom of our file, outside of our pages loop, we need to put the following two function calls:
+
+```lua
+...
+
+zine:render()
+zine:save("output.png")
+```
+
+Now, if you run the script and find the image as specified by the path in zine:save, you should see some teeny-tiny page numbers on the top-left of each page!
