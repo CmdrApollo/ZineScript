@@ -1,3 +1,8 @@
+---
+title: ZineScript Tutorial
+layout: home
+---
+
 # Welcome
 
 Welcome to the wonderful world of ZineScript! If you're new here (or to zines at all), this is just the section for you!
