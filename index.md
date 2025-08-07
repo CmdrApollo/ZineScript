@@ -2,12 +2,11 @@
 layout: home
 title: Welcome
 ---
-Welcome to the documentation.
 
 # Getting Started
 
-Welcome to the docs!
+Welcome to ZineScript!
 
 ## Installation
 
-ZineScript can be installed at [https://www.google.com]
+ZineScript can be installed at *link here*.
