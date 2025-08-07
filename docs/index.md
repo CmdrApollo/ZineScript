@@ -19,7 +19,7 @@ To start, "What is a zine?"
 
 ## Installation
 
-ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/). Purchasing or donating to ZineScript is strictly **not necessary**, but is greatly appreciated if you have the funds! Once you install the zipped folder, simply extract it to whatever folder you wish.
+ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/ZineScript/). Purchasing or donating to ZineScript is strictly **not necessary**, but is greatly appreciated if you have the funds! Once you install the zipped folder, simply extract it to whatever folder you wish.
 
 ## Where do I go From Here?
 

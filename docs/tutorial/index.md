@@ -9,17 +9,17 @@ Welcome to the wonderful world of ZineScript! If you're new here (or to zines at
 
 To start, "What is a zine?"
 
-> Zines, for those who don't know, are type of self-published short-form physical or digital media. The name "zine" is a shortening of the word "magazine".
+> Zines, for those who don't know, are a type of self-published short-form physical or digital media. The name "zine" is a shortening of the word "magazine".
 
 "What is ZineScript and why did you make it?"
 
-> ZineScript aims to bring zines to more programming-oriented minds. Originally conceived as a zine-like twist on [Sonic Pi](https://sonic-pi.net/), ZineScript is a lua-based scripting environment for programmatically creating/generating zines.
+> ZineScript aims to bring zines to those with more programming-oriented minds. Originally conceived as a zine-like twist on [Sonic Pi](https://sonic-pi.net/), ZineScript is a lua-based scripting environment for programmatically creating/generating zines.
 
 "How can I get started with ZineScript?"
 
 ## Installation
 
-ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/). Purchasing or donating to ZineScript is strictly **not necessary**, but is greatly appreciated if you have the funds! Once you install the zipped folder, simply extract it to whatever folder you wish. Important Note: this ZineScript tutorial is *not* intended for those new to programming. You are expected to have at least a basic knowledge of programming and the ability to write Lua scripts. That said, Lua *is* quite beginner-friendly, so it's not all doom and gloom if you don't know Lua. However, this tutorial will not be the place to learn it for the first time.
+ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/ZineScript/). Purchasing or donating to ZineScript is strictly **not necessary**, but is greatly appreciated if you have the funds! Once you install the zipped folder, simply extract it to whatever folder you wish. Important Note: this ZineScript tutorial is *not* intended for those new to programming. You are expected to have at least a basic knowledge of programming and the ability to write Lua scripts. That said, Lua *is* quite beginner-friendly, so it's not all doom and gloom if you don't know Lua. However, this tutorial will not be the place to learn it for the first time.
 
 ## Running ZineScript
 
