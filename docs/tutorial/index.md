@@ -90,3 +90,37 @@ zine:save("output.png")
 ```
 
 Now, if you run the script and find the image as specified by the path in zine:save, you should see some teeny-tiny page numbers on the top-left of each page along with our randomly-generated colors!
+
+Since the text is so small, let's make it a bit bigger, and also give it a random color! To do that, we need to add a Lua table called 
+
+```lua
+textOptions
+```
+
+in our larger table of text options. So now, let's replace the previous
+
+```lua
+zine:text()
+```
+
+call with the following code:
+
+```lua
+zine:text({
+    text = "Page " .. tostring(page),
+    -- (x, y) coordinate pairs are measured
+    -- in inches and are offset from the top-
+    -- left. so (0.1, 0.1) means that the
+    -- top-left corner of the text will be
+    -- inset 0.1 inches from the left of the
+    -- page and 0.1 inches from the top of
+    -- the page.
+    x = 0.1,
+    y = 0.1,
+    -- this part is new !!
+    textOptions = {
+        size = 30,
+        color = zine:randomColor(),
+    }
+})
+```
