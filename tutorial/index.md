@@ -14,7 +14,7 @@ To start, "What is a zine?"
 
 ## Installation
 
-ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/). Purchasing or donating to ZineScript is strictly **not necessary**, but is greatly appreciated if you have the funds! Once you install the zipped folder, simply extract it to whatever folder you wish.
+ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/). Purchasing or donating to ZineScript is strictly **not necessary**, but is greatly appreciated if you have the funds! Once you install the zipped folder, simply extract it to whatever folder you wish. Important Note: this ZineScript tutorial is *not* intended for those new to programming. You are expected to have at least a basic knowledge of programming and the ability to write Lua scripts. That said, Lua *is* quite beginner-friendly, so it's not all doom and gloom if you don't know Lua. However, this tutorial will not be the place to learn it for the first time.
 
 ## Running ZineScript
 
@@ -22,7 +22,7 @@ To run a ZineScript source file (a file with the .zs extension), simply drag and
 
 # Getting Started With ZineScript Scripting
 
-Now that we've spoken in broad-strokes about how ZineScript, let's get into the nitty-gritty. To start, it is best practice to begin a .zs file with the following lines:
+Now that we've spoken in broad-strokes about how ZineScript operates, let's get into the nitty-gritty. To start, it is best practice to begin a .zs file with the following lines:
 
 ```lua
 zine:title("Title Name Here")
@@ -84,4 +84,4 @@ zine:render()
 zine:save("output.png")
 ```
 
-Now, if you run the script and find the image as specified by the path in zine:save, you should see some teeny-tiny page numbers on the top-left of each page!
+Now, if you run the script and find the image as specified by the path in zine:save, you should see some teeny-tiny page numbers on the top-left of each page along with our randomly-generated colors!
