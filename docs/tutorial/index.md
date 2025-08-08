@@ -149,11 +149,21 @@ Finally for this tutorial, I will just show off something fun: the `zine:spraypa
 zine:background(zine:randomColor())
 zine:add(
     zine:spraypaint({
-        surface = zine:newSurface({ x = 0, y = 0, width = zine:pageWidth(), height = zine:pageHeight() }),
+        surface = zine:newSurface({
+            x = 0,
+            y = 0,
+            width = zine:pageWidth(),
+            height = zine:pageHeight()
+        }),
         color = "white",
-        region = { 0, 0, zine:pageWidth(), zine:pageHeight() }
+        region = {
+            0,
+            0,
+            zine:pageWidth(),
+            zine:pageHeight()
+        }
     })
 )
 ```
 
-Run the script for the last time, and you should a white spraypaint-like effect over the randomly-colored-background. Thank you for sticking through to the end of the ZineScript tutorial, and happy coding! Make sure to check out the [docs](../documentation/)!
+Run the script for the last time, and you should a white spraypaint-like effect over the randomly-colored-background. Thank you for sticking through to the end of the ZineScript tutorial, and happy coding! Make sure to check out the [docs](../documentation/) and [example programs](../examples/)!
