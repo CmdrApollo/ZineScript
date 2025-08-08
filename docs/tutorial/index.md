@@ -110,7 +110,7 @@ zine:text({
 })
 ```
 
-Note: There are more optional parameters to be changed via `textOptions` than just size and color! These include things like changing the font and centering the text. Check out the [docs](documentation/) for more details!
+Note: There are more optional parameters to be changed via `textOptions` than just size and color! These include things like changing the font and centering the text. Check out the [docs](../documentation/) for more details!
 
 For the penultimate part of this tutorial, I will demonstrate how you can:
 1. Transform surfaces in various ways
