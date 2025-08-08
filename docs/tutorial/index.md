@@ -25,8 +25,6 @@ ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/Z
 
 To run a ZineScript source file (a file with the .zs extension), simply drag and drop the file onto ZineScript in your file explorer. Alteratively, if you are savvy with the terminal/windows command prompt/powershell, simply run ZineScript with the path to your file as the argument.
 
-![this video shows how to run a script](./ZS-vid.mp4)
-
 # Getting Started With ZineScript Scripting
 
 Now that we've spoken in broad-strokes about how ZineScript operates, let's get into the nitty-gritty. To start, it is best practice to begin a .zs file with the following lines:
