@@ -13,7 +13,7 @@ To start, "What is a zine?"
 
 "What is ZineScript and why did you make it?"
 
-> ZineScript aims to bring zines to those with more programming-oriented minds. Originally conceived as a zine-like twist on [Sonic Pi](https://sonic-pi.net/), ZineScript is a lua-based scripting environment for programmatically creating/generating zines.
+> ZineScript aims to bring zine creation to those with more programming-oriented minds. Originally conceived as a zine-like twist on [Sonic Pi](https://sonic-pi.net/), ZineScript is a lua-based scripting environment for programmatically creating/generating zines.
 
 "How can I get started with ZineScript?"
 
@@ -80,6 +80,8 @@ zine:add(
 ...
 ```
 
+Note the top comment! This code **does not** get inserted at the bottom of your script! be careful or it is very possible that you will break your script!
+
 At this point, you may be tempted to run our script and see what beautiful artwork we have created. However, if you *do* try to run the script, you won't see anything! The reason for this is because at the very bottom of our file, outside of our pages loop, we need to put the following two function calls:
 
 ```lua
@@ -89,7 +91,7 @@ zine:render()
 zine:save("output.png")
 ```
 
-Now, if you run the script and find the image as specified by the path in zine:save, you should see some teeny-tiny page numbers on the top-left of each page along with our randomly-generated colors!
+Now, if you run the script and find the image as specified by the path in `zine:save`, you should see some teeny-tiny page numbers on the top-left of each page along with our randomly-generated colors!
 
 Since the text is so small, let's make it a bit bigger, and also give it a random color! To do that, we need to add a Lua table called `textOptions` in our larger table of all options for the text (including "text", "x", and "y"). So now, let's replace the previous `zine:text()` call with the following code:
 
@@ -152,4 +154,4 @@ zine:add(
 )
 ```
 
-Run the script for the last time, and you should a white spraypaint-like effect over the randomly-colored-background. Thank you for sticking through to the end of the ZineScript tutorial, and happy coding!
+Run the script for the last time, and you should a white spraypaint-like effect over the randomly-colored-background. Thank you for sticking through to the end of the ZineScript tutorial, and happy coding! Make sure to check out the [docs](/documentation)!
