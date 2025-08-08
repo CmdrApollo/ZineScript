@@ -21,6 +21,8 @@ To start, "What is a zine?"
 
 ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/ZineScript/). Purchasing or donating to ZineScript is strictly **not necessary**, but is greatly appreciated if you have the funds! Once you install the zipped folder, simply extract it to whatever folder you wish. Important Note: this ZineScript tutorial is *not* intended for those new to programming. You are expected to have at least a basic knowledge of programming and the ability to write Lua scripts. That said, Lua *is* quite beginner-friendly, so it's not all doom and gloom if you don't know Lua. However, this tutorial will not be the place to learn it for the first time.
 
+<iframe frameborder="0" src="https://itch.io/embed/3795542" width="552" height="167"><a href="https://cmdrapollo.itch.io/zinescript">ZineScript by CmdrApollo</a></iframe>
+
 ## Running ZineScript
 
 To run a ZineScript source file (a file with the .zs extension), simply drag and drop the file onto ZineScript in your file explorer. Alteratively, if you are savvy with the terminal/windows command prompt/powershell, simply run ZineScript with the path to your file as the argument.
