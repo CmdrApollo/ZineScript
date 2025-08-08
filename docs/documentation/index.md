@@ -212,10 +212,10 @@ Options for `zine:spraypaint` are as follows:
 
 `zine:spraypaint` returns the surface object that was passed into it.
 
-## startPage
+## startpage
 
 ```lua
-zine:startPage(pageNumber) -> nil
+zine:startpage(pageNumber) -> nil
 ```
 
 Sets the active page. Note that while you *can* set pages outside of the range 1-8, they will not be rendered.
