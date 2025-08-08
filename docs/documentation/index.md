@@ -31,6 +31,16 @@ zine:background(color) -> nil
 
 Set the background color for the active page. [zine:startpage](#startpage) must be called before calling `zine:background`. Note that colors are stored as strings such as "red", "yellow", or "forestgreen". You can also use hex values in the following format: `#rrggbb`.
 
+## blur
+
+```lua
+zine:blur(surface) -> Surface
+```
+
+Apply a gaussian blur to a given surface.
+
+`zine:blur` returns the surface object that was passed into it.
+
 ## endpage
 
 ```lua
