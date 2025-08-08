@@ -80,7 +80,7 @@ zine:add(
 ...
 ```
 
-Note the top comment! This code **does not** get inserted at the bottom of your script! be careful or it is very possible that you will break your script!
+Note the top comment! This code **does not** get inserted at the bottom of your script! Be careful or it is very possible that you will break your script!
 
 At this point, you may be tempted to run our script and see what beautiful artwork we have created. However, if you *do* try to run the script, you won't see anything! The reason for this is because at the very bottom of our file, outside of our pages loop, we need to put the following two function calls:
 
