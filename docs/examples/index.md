@@ -98,7 +98,12 @@ for page = 1, 8 do
     for i = 1, 8 do
         zine:add(
             zine:spraypaint({
-                surface = zine:newSurface({x = zine:pageWidth() / 2 - zine:pageWidth() / i, y = zine:pageHeight() / 2 - zine:pageHeight() / i, width = zine:pageWidth() / (i / 2), height = zine:pageHeight() / (i / 2)}),
+                surface = zine:newSurface({
+                    x = zine:pageWidth() / 2 - zine:pageWidth() / i,
+                    y = zine:pageHeight() / 2 - zine:pageHeight() / i,
+                    width = zine:pageWidth() / (i / 2),
+                    height = zine:pageHeight() / (i / 2)
+                }),
                 color = zine:randomColor(),
                 region = {0, 0, zine:pageWidth() / (i / 2), zine:pageHeight() / (i / 2)},
                 pixelSize = 5 - math.floor(i / 2),
