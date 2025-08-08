@@ -25,4 +25,4 @@ ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/Z
 
 ## Where do I go From Here?
 
-From here, I recommend you check out the [tutorial](tutorial/)! Otherwise, you can just jump straight into the [documentation](documentation/)!
+From here, I recommend you check out the [tutorial](tutorial/)! Otherwise, you can just jump straight into the [documentation](documentation/) or check out the [example programs](examples/)!

@@ -5,7 +5,7 @@ layout: home
 
 # ZineScript Documentation
 
-Below is the documentation for all currently-available ZineScript functions, prefixed by `zine:`. Functions are listed in alphabetical order.
+Below is the documentation for all currently-available ZineScript functions, prefixed by `zine:`. Functions are listed in alphabetical order. To see the documentation in action, check out the [example programs](../examples/)!
 
 ## add
 
@@ -218,7 +218,8 @@ Options for `zine:spraypaint` are as follows:
 1. surface - the surface to apply spraypaint to
 2. color - the color of the spraypaint
 3. region - the region of the surface that the spraypaint should cover, stored as a table in the format `{ x, y, width, height }`, all measured in inches
-4. coverage - likelihood for each pixel in the surface to get chosen to be filled by the spraypaint
+4. pixelSize - size in pixels of each paint drop
+5. coverage - likelihood for each pixel in the surface to get chosen to be filled by the spraypaint
 
 `zine:spraypaint` returns the surface object that was passed into it.
 
