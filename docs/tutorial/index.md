@@ -154,4 +154,4 @@ zine:add(
 )
 ```
 
-Run the script for the last time, and you should a white spraypaint-like effect over the randomly-colored-background. Thank you for sticking through to the end of the ZineScript tutorial, and happy coding! Make sure to check out the [docs](/documentation)!
+Run the script for the last time, and you should a white spraypaint-like effect over the randomly-colored-background. Thank you for sticking through to the end of the ZineScript tutorial, and happy coding! Make sure to check out the [docs](../documentation/)!
