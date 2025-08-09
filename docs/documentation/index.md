@@ -41,6 +41,16 @@ Apply a gaussian blur to a given surface.
 
 `zine:blur` returns the surface object that was passed into it.
 
+## contour
+
+```lua
+zine:contour(surface) -> Surface
+```
+
+Apply a contour effect to a given surface.
+
+`zine:contour` returns the surface object that was passed into it.
+
 ## endpage
 
 ```lua
@@ -121,7 +131,8 @@ Options for `zine:noise` are as follows:
 1. surface - the surface to apply noise to
 2. color - the color of the noise
 3. region - the region of the surface that the noise should cover, stored as a table in the format `{ x, y, width, height }`, all measured in inches
-4. coverage - likelihood for each pixel in the surface to get chosen to be filled by the noise
+4. pixelSize - size in pixels of each noise tile
+5. coverage - likelihood for each pixel in the surface to get chosen to be filled by the noise
 
 `zine:noise` returns the surface object that was passed into it.
 
@@ -219,7 +230,8 @@ Options for `zine:spraypaint` are as follows:
 2. color - the color of the spraypaint
 3. region - the region of the surface that the spraypaint should cover, stored as a table in the format `{ x, y, width, height }`, all measured in inches
 4. pixelSize - size in pixels of each paint drop
-5. coverage - likelihood for each pixel in the surface to get chosen to be filled by the spraypaint
+5. inverted - whether or not to invert the distance
+6. coverage - likelihood for each pixel in the surface to get chosen to be filled by the spraypaint
 
 `zine:spraypaint` returns the surface object that was passed into it.
 

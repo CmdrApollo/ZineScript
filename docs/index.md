@@ -26,3 +26,13 @@ ZineScript can be installed on my itch page, [here](https://cmdrapollo.itch.io/Z
 ## Where do I go From Here?
 
 From here, I recommend you check out the [tutorial](tutorial/)! Otherwise, you can just jump straight into the [documentation](documentation/) or check out the [example programs](examples/)!
+
+## Gallery
+
+I wanted to show off a few of the things that ZineScript is capable of here. To start, we have my own personal zine, "House of Ascii". This zine represents the shallow end of the spectrum. It only really uses a few functions, and mainly engages readers with text.
+
+![House of Ascii Volume 1](./houseofascii1.png "House of Ascii Volume 1")
+
+Next is something a little more extreme that shows off more of what ZineScript can handle. This zine is more image-heavy, and I'm sure you can see how this type of zine can be expanded upon into a more fleshed-out collage-style zine or even a more all-over-the-place, psychedelic zine.
+
+![Crazine](./crazine.png "Crazine")
