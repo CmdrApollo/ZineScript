@@ -106,7 +106,7 @@ Options for `zine:newSurface` are as follows:
 3. width - the surface's width, measured in inches
 4. height - the surface's height, measured in inches
 
-`zine:image` returns a surface object.
+`zine:newSurface` returns a surface object.
 
 ## noise
 
@@ -258,10 +258,10 @@ Options for `zine:text` are as follows:
     3. color - the color of the text, default is black
     4. backgroundColor - the background color of the text, default is no background color
     5. antialias - whether or not to antialias the text, default is true
-    6. centered - wheter or not to center the text surface
+    6. centered - whether or not to center the text surface
     7. wrapWidth - at what width, measured in inches, to automatically wrap text
     8. bold - whether or not text is bold
-    9. italic - wheter or not text is italic
+    9. italic - whether or not text is italic
 
 `zine:text` returns a surface object.
 
